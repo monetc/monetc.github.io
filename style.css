@@ -1,0 +1,164 @@
+/*logo*/ @import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
+/*general*/@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+html, body {
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+/*	height: 100%;*/
+}
+
+body {
+	font-family: 'PT Sans Caption', sans-serif;
+	border: 23px solid #85c4c3;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h2 {
+	font-size: 4em;
+	font-weight: 500;
+	margin-top: 8%;	
+	color: #c482aa;
+}
+
+.header {
+	overflow: hidden;
+}
+
+.logo {
+	padding-left: 8px;
+	padding-top: 8px;
+	float: left;
+	font-family:'Rajdhani', sans-serif;
+}
+
+.logo a:hover, 
+.logo a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+.icons {
+	float: right;
+	padding-top: 15px;
+	padding-right: 8px;
+}
+
+.icons {
+	font-size: 1.2em;
+}
+
+.icons a i:hover {
+	color: black;
+}
+
+.about {
+/*	height: 100vh;*/
+	padding: 6%;
+}
+
+.info {
+	margin-top: 10%;
+	padding: 2% 0 0 0;
+	font-size: 1.3em;
+}
+
+.skills li {
+	font-size: 0.7em;
+	padding-bottom: 5px;
+}
+
+.skills span {
+	border: 1px solid #ABA7A7;
+	border-radius: 5px;
+	padding: 2px;
+	font-size: 15px;
+}
+
+.checkout {
+	color: #ABA7A7;
+	text-align: center;
+	font-style: italic; 
+	margin-top: 3em;
+}
+
+.checkout h4 {
+	font-size: 1em;
+}
+
+.projects {
+	margin-top: 3%;
+}
+
+.projects h3 {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.projects h4 {
+	text-align: center;
+	font-size: 1em;
+	color: #c7d89f;
+}
+
+.projects h5 {
+	text-align: center;
+	color: #c7d89f;
+}
+
+.projects a:hover {
+	color: #c7d89f;
+	text-decoration: none;
+}
+
+.proj {
+	padding: 4% 0;
+}
+
+footer {
+	background-color: #E5E2E2;
+	font-style: italic;
+	height: 20vh;
+}
+
+footer h4 {
+	padding: 5.5rem 0 0 0;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+
+.header {
+	border-bottom: 1px solid #ABA7A7;
+} 
+
+h2 {
+	font-size: 9em;
+	font-weight: 500;
+	margin-top: 8%;	
+}
+
+.info {
+	margin-top: 5%;
+	border-top: 2px solid #ABA7A7;
+	padding: 2% 0 0 0;
+	font-size: 2em;
+}
+
+.checkout {
+	color: #ABA7A7;
+	text-align: center;
+	font-style: italic; 
+	padding: none;
+}
+
+.projects h3 {
+	text-align: center;
+	font-size: 2em;
+}
+
+}

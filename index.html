@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>I'm Monet</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+	<header class="container">
+		<div class="row header">
+			<div class="col logo">
+				<h1> <a href="index.html">MC</a></h1>
+			</div>
+			<div class="col text-right icons">
+			<a href="https://www.linkedin.com/in/s-monet-cooper-01836159/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://codepen.io/wanderingdev/" target="_blank"><i class="fab fa-codepen"></i></a>
+			</div>
+		</div>
+	</header>
+	<main>
+
+		<section class="container hello">
+			<div class="row">
+				<h2 class="col text-center"><span class="words-alternate" data-delay="2000" data-words="HIYA,WHAT'S UP,YO,HELLO">HELLO</span>!</h2>
+			</div>
+		</section>
+
+		<section class="container-fluid about">
+			<div class="row">
+				<div class="col-md-6 info">
+					<p>i'm monet cooper, a web developer learning to make cool stuff on the internets. i focus on clean minimal design with a flare. based in atlanta, ga i am currently working on bulding up my portfolio. </p><br>
+					<div class="skills">
+						<h3>skills</h3>
+						<ul>
+							<li>html & css <span>good</span></li>
+							<li>javascript <span>still learning</span></li>
+							<li>wordpress <span>good</span></li>
+							<li>sketch <span>still learning</span></li>
+							<li>design <span>decent</span> <span>still learning</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-4 checkout">
+					<h4>check out some of my work <br> <span><i class="fas fa-long-arrow-alt-down"></i></span></h4>
+				</div>	
+			</div>
+		</div>
+
+		<section class="container projects">
+			<div class="row">
+				<div class="col">
+					<h4>websites</h4>
+					<div class="proj">
+						<h3><a href="felicia.html">@feliciadoee</a></h3>
+						<h5> ~ freelance job i designed and developed ~ </h5>
+					</div>
+					<div class="proj">
+						<h3><a href="creative.html"> creative inc.</a></h3>
+						<h5> ~ concept theme i developed ~ </h5>
+					</div>
+					<h4>javascript fun</h4>	
+					<div class="proj">
+						<h3><a href="Guessthenumber_js/index.html" target="_blank"> javascript guessing game</a></h3>
+						<h5> ~ concept theme i developed ~ </h5>
+					</div>		
+				</div>
+			</div>
+		</section>
+	</main>	
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h4>smonetc3@gmail.com</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<!-- jquery -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script>
+		if ( $('span.words-alternate').length > 0 ) {
+		$this = $('span.words-alternate');
+	
+		var words = $this.attr('data-words'),
+				delay = ( $this.attr('data-delay') ? $this.attr('data-delay') : 3000 ),
+				arrayWords = words.split(','),
+				i = 0;
+	
+		setInterval(function () {
+				$('span.words-alternate').fadeOut(function(){
+						$(this).html(arrayWords[i = (i + 1) % arrayWords.length]).fadeIn();
+				});
+		}, delay);
+
+}
+	</script>
+</body>
+</html>
